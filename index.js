@@ -76,5 +76,8 @@ console.log(valTimesIndex);
 let idx = valTimesIndex.map((_, i) => i)
 console.log(idx)
 
-let results = valTimesIndex.map((value, index) => value * idx[index]);
-console.log(results);
+function valTimes(valTimesIndex) {
+    let outer = valTimesIndex.map((value, index) => value * idx[index]);
+    return outer
+  }
+console.log(valTimes(valTimesIndex));
