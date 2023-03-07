@@ -67,26 +67,14 @@ console.log(maxNum(arr));
 
 // let numbers = [1, 2, 3];
 
-// function valTimesIndex(multiply) {
-//     multiply = numbers * numbers.indexOf();
-//     return multiply;
-// }
-
-// let final = valTimesIndex(numbers);
-// console.log(final);
-
-
 let valTimesIndex = [1, 2, 3].map((numbers) =>{
 let output = numbers;
 return output
 })
-
 console.log(valTimesIndex);
 
 let idx = valTimesIndex.map((_, i) => i)
 console.log(idx)
 
-function valTimes(arr) {
-    return arr.map((valTimesIndex, idx) => valTimesIndex * idx);
-  }
-console.log(valTimes(arr));
+let results = valTimesIndex.map((value, index) => value * idx[index]);
+console.log(results);
